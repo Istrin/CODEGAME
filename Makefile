@@ -8,4 +8,4 @@ installemsdk:
   cd ../emsdk && emsdk install latest && emsdk activate latest && emsdk_env.bat && emcc game.c -s WASM=1 -o game.html
   npm i http-server -g
 runserver:
-    cd ../emrun game.html
+    cd .. && http-server
